@@ -1,0 +1,790 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* General */
+body{
+    font-family: "Poppins";
+    background-color: #F2EDDF;
+    max-width: 100vw;
+}
+body p{
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+    color: #F3E3E2;
+    font-family: 'Poppins';
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 19px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.BackImg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0px;
+}
+.dja{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Navbar */
+.navbar-container{
+    background-color: #f3f3f3;
+    height: 50px;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 10;
+}
+.navbar{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+.name{
+    margin: 0px 0px 0px 15px;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 2px;
+    z-index: 1000;
+}
+.nav-links li{
+    margin: 0 20px;
+}
+.menu-btn{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+    background-image: url(../Images/Menu_Button1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/* All */
+.all{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Intro */
+#Intro {
+    display: flex;
+}
+.Intro_Left{
+    display: flex;
+    width: 65%;
+    height: 80vh;
+    max-height: 600px;
+    background-color: #0C0C1E;
+    align-items: center;
+    justify-content: center;
+}
+.Intro_Left_Centre{
+    position: relative;
+    width: 75%;
+    height: 80%;
+}
+.Intro_Left .picture{
+    position: inherit;
+    width: 70%;
+    height: 67%;
+}
+.Intro_Left img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px;
+    object-fit: cover;
+}
+.Intro_Left h2{
+    z-index: 1;
+    color: #1B2E3C;
+    text-align: left;
+    margin-bottom: 0px;
+}
+.Intro_Left p{
+    color: #F3E3E2;
+    text-align: left;
+}
+.Intro_Right{
+    position: relative;
+    display: flex;
+    float: right;
+    width: 35%;
+    height: 80vh;
+    max-height: 600px;
+    background-color: #1B2E3C;
+    z-index: 1;
+    overflow: auto;
+}
+.test{
+    height: 20px;
+    background-color: red;
+}
+
+/* Skills */
+.Skills{
+    width: 75%;
+    margin: auto auto;
+    color: #F3E3E2;
+}
+
+/* Design And Engineering */
+.Design_And_Engineering{
+    width: 100%;
+    margin: auto auto;
+    color: #232B2B;
+    display: flex;
+    justify-content: space-between;
+}
+.Design_And_Engineering h2{
+    color: #0C0C1E;
+    text-decoration: underline 4px;
+    margin-top: 15px;
+    margin-block: 0px;
+}
+.Engineering_And_Design{
+    width: 100%;
+    margin-top: 10px;
+}
+.Engineering_And_Design img{
+    position: inherit;
+    width: 100%;
+}
+.Design,
+.Engineering{
+    text-align: justify;
+    position: relative;
+    width: 49%;
+    max-height: 400px;
+    padding: 10px;
+}
+.Design img,
+.Engineering img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.Design img{
+    border-radius: 10px 14px 14px 10px;
+    width: 101%;
+}
+.Engineering img{
+    border-radius: 14px 10px 10px 14px;
+}
+.design,
+.engineering{
+    display: flex;
+    justify-content: space-between;
+    border-width: 1px;
+    border-radius: 14px;
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 1px;
+}
+.design{
+    border-color: #0C0C1E;
+}
+.engineering{
+    border-color: #1B2E3C;
+    margin-left: 15px;
+}
+.Design .underline{
+    position: inherit;
+    top: -6px;
+    left: 1.4px;
+    background-color: #0C0C1E;
+    height: 4px;
+    width: 50px;
+    display: none;
+}
+.Engineering .underline{
+    position: inherit;
+    top: -6px;
+    left: 1.4px;
+    background-color: #0C0C1E;
+    height: 4px;
+    width: 27px;
+    display: none;
+}
+.Engineering .underline2{
+    position: inherit;
+    top: -10px;
+    left: 46px;
+    background-color: #0C0C1E;
+    height: 4px;
+    width: 84px;
+    display: none;
+}
+.frame{
+    margin: auto;
+}
+
+
+/* Footer */
+footer{
+    background-color: #1B2E3C;
+    height: auto;
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    color: whitesmoke;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 2px;
+    margin-top: 10px;
+}
+footer h2{
+    font-size: 40px;
+}
+
+/* Contact */
+.links{
+    display: flex;
+    margin: auto auto;
+    width: 40%;
+    justify-content: space-between;
+}
+.fa{
+    color: #f3f3f3;
+}
+
+
+/* Others */
+.PC_Hidden{
+    display: none;
+    position: inherit;
+}
+
+/* About */
+.All_About,
+.Proj{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #2D495E;
+    min-height: 80vh;
+}
+.About_Content{
+    width: 100%;
+    margin: 10px 0px;
+}
+/*.About_Image{
+    width: 30%;
+    max-height: 30%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.About_Image img{
+    width: 100%;
+    border-radius: 15px;
+}*/
+.About_Title{
+    width: 100%;
+    text-align: center;
+}
+.About_Title h1{
+    font-size: 70px;
+    margin: 0px 0px 15px 0px;
+    color: #F3f3f3;
+}
+.AboutTxt{
+    background-color: #F3F3F3;
+    color: #1B2E3C;
+    width: 100%;
+}
+.AboutTxt p{
+    padding: 10px 5vw;
+}
+/* .Cert_Div{
+    width: 100%;
+    display: block;
+}
+.Cert_Div_Row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Full_Cert{
+    width: 48%;
+    height: 50vh;
+    display: block;
+    margin: 0px 0px 25px 0px;
+}
+.Cert_Image{
+    width: 100%;
+    height: 100%;
+}
+.Cert_Image img{
+    width: 100%;
+    height: 100%;
+}
+.Detail{
+    height: 18vh;
+    bottom: 20vh;
+    padding: 1vh;
+    display: flex;
+    max-width: 100%;
+    position: relative;
+    align-items: center;
+    background-color: #0C0C1E;
+    border-radius: 20px 20px 0px 0px;
+}
+.Details p{
+    margin: 0px;
+}
+.Cert_Descrip{
+    min-height: 30%;
+    width: 90%;
+}
+.Cert_Descrip h2,
+.Cert_Link h4{
+    margin: 0px 10%;
+    color: #F3E3E2;
+}
+.Cert_Link{
+    height: 32%;
+    width: 90%;
+} */
+
+
+/* Projects */
+.ProjDescrip{
+    width: 100%;
+    min-height: 30vh;
+    color: #1B2E3C;
+    background-color: #F3F3F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ProjDescrip p{
+    padding: 2vmin 15vmin;
+    font-size: 15px;
+}
+.diag3{
+    height: 25px;
+    width: 100%;
+    background: linear-gradient(to right bottom, transparent 50%, #F3F3F3 50%),
+    linear-gradient(to left bottom, #2D495E 50%, #F3F3F3 50%);
+}
+.diag4{
+    height: 25px;
+    width: 100%;
+    background: linear-gradient(to right bottom, transparent 50%, #2D495E 50%),
+    linear-gradient(to left bottom, #F3F3F3 50%, #2D495E 50%);
+}
+.ProdLnkDiv{
+    width: 80vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: calc(50% - 5px) calc(50% - 5px);
+    grid-gap: 10px;
+    margin: 20px 0px;
+}
+.ProdLnkAll{
+    width: 100%;
+    display: block;
+}
+.ProdLnkHd h2{
+    color: #F3F3F3;
+    font-size: 34px;
+}
+.ProdLnk{
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+    background-color: #F3F3F3;
+    justify-content: space-between;
+}
+.ProdLnk *{
+    
+    color: #0C0C1E;
+}
+.ProdLnkImg{
+    width: 35%;
+    height: 100%;
+    border-radius: 20px 0px 0px 20px;
+}
+.ProdLnkImg1{
+    background-image: url('../Images/TIDLogo.jpg');
+}
+.ProdLnkImg2{
+    background-image: url('https://dukeakinoluwa.github.io/OurMagz/Images/Icon.jpg');
+}
+.ProdLnkDescrip{
+    display: flex;
+    flex-direction: column;
+    width: 63%;
+    height: 100%;
+    border-radius: 0px 20px 20px 0px;
+    justify-content: center;
+}
+.ProdLinkTitle{
+    text-overflow: ellipsis;
+}
+.ProdLnkTxt{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+}
+.ProdLnk h1{
+    font-size: 20px;
+}
+.ProdLnk .fa{
+    display: flex;
+    align-items: center;
+    color: #0C0C1E;
+    font-size: 15px;
+}
+.ProdLnk a{
+    font-size: 17px;
+    margin-left: 3px;
+}
+.ProdLnkLnk{
+    display: flex;
+}
+
+/* Contacts */
+.Cont{
+    width: 100%;
+    min-height: 95vh;
+}
+.Cont *{
+    color: #0C0C1E;
+}
+.ContAll{
+    margin: 20px 0px;
+    width: 40%;
+    min-height: 80vh;
+    background-color: rgb(243, 243, 243, 0.85);
+    border-radius: 8px;
+}
+.ContAll h2{
+    padding: 20px;
+    text-align: justify;
+}
+.ContHead{
+    font-size: 35px;
+    text-align: center;
+    color: #0C0C1E;
+}
+form{
+    width: 80%;
+    padding: auto;
+}
+form .ContF{
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0px 15px 0px;
+}
+.ContF label{
+    width: 30%;
+    height: 60px;
+    border-radius: 8px 0px 0px 8px;
+    background-color: #0C0C1E;
+    color: #F3F3F3;
+}
+.ContFImpt{
+    width: 70%;
+    height: 60px;
+    border: solid 0px;
+    border-radius: 0px 8px 8px 0px;
+}
+/* .ContFImpt:hover,
+.ContFImpt:active{
+    border: none;
+} */
+.ContFSubmt{
+    height: 53px;
+    width: 100px;
+    color: #0C0C1E;
+    border: solid 2px #0C0C1E;
+    border-radius: 8px;
+}
+.ContFIcons{
+    padding: 25px 0px 0px 0px;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+@media (max-width: 549px){
+    p{
+        font-size: 13px;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .navbar-container{
+        background-color: #f3f3f3;
+        height: 45px;
+        top: 0;
+    }
+    .nav-links{
+        top: 0;
+        right: 0px;
+        width: 100%;
+        padding: 0px;
+        height: 100vh;
+        position: fixed;
+        color: #F3E3E2;
+        margin-top: -900px;
+        display: flex;
+        background: #0C0C1E;
+        flex-direction: column;
+        transition: all 1s ease;
+        justify-content: center;
+        border-bottom-left-radius: 25vw;
+    }
+    .menu-btn{
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        height: 26px;
+        width: 34px;
+        cursor: pointer;
+        display: block;
+        z-index: 1000;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+    .i{
+        background-image: url(../Images/Menu_Button2.png);
+    }
+
+    #Intro {
+        display: inline-block;
+    }
+    #Intro img{
+        margin-top: 30px;
+    }
+    .Intro_Left{
+        width: 100%;
+        height: auto;
+        margin-top: -8px;
+    }
+    .Intro_Right{
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-color: #1B2E3C;
+    }
+    .Intro_Left .picture{
+        position: inherit;
+        width: 100%;
+        height: 70%;
+    }
+
+    .Design,
+    .Engineering{
+        width: 100%;
+    }
+    .Line1{
+        background-color: #1B2E3C;
+        width: 100%;
+        height: 1px;
+        margin-top: 3px;
+    }
+    .Design_And_Engineering{
+        display: block;
+    }
+    .engineering{
+        margin-left: 0px;
+    }
+    .design,
+    .engineering{
+    border-width: 0px;
+    border-radius: 0%;
+    }
+
+
+    /* Skills */
+    .Skills{
+        width: 75%;
+        margin: auto auto;
+    }
+
+    .Phone_Hidden{
+        display: none;
+    }
+
+    /* Others */
+    .PC_Hidden{
+        display: block;
+        position: inherit;
+    }
+    .diag1{
+        height: 25px;
+        width: 100%;
+        background: linear-gradient(to left bottom, #0C0C1E 50%, #1B2E3C 50%);
+    }
+    .diag2{
+        height: 25px;
+        width: 100%;
+        background: linear-gradient(to right bottom, #1B2E3C 50%, #F2EDDF 50%);
+    }
+
+    /* About */
+    .Cert_Div_Row{
+        flex-direction: column;
+    }
+    .Full_Cert{
+        width: 100%;
+        height: 34vh;
+    }
+    .About_Content{
+        width: 90%;
+    }
+    .Detail{
+        height: 14vh;
+        bottom: 16vh;
+    }
+    .About_Title h1{
+        font-size: 30px;
+        margin: 15px 0px;
+    }
+    .Cert_Descrip h2{
+        font-size: 19px;
+    }
+    .Cert_Link h4{
+        font-size: 13px;
+    }
+
+    .ProjDescrip p{
+        padding: 3vw;
+    }
+    .ProdLnkDiv{
+        grid-template-columns: 100%;
+        width: 90vw;
+    }
+    .ProdLnk{
+        height: 80px;
+        border-radius: 10px;
+    }
+    .ProdLnkImg{
+        border-radius: 10px 0px 0px 10px;
+    }
+    .ProdLnkDescrip{
+        border-radius: 0px 10px 10px 0px;
+    }
+    .ProdLnk h1,
+    .ProdLnk p{
+        font-size: 14px;
+    }
+    .ProdLnk h2{
+        font-size: 11px;
+    }
+    footer h2{
+        font-size: 20px
+    }
+
+
+    .ProdLnkHd h2{
+        font-size: 22px;
+    }
+
+    /* Contact */
+    .ContAll{
+        width: 95%;
+    }
+    form .ContF{
+        margin: 10px 0px 5px 0px;
+    }
+    .ContF label,
+    .ContFImpt {
+        height: 46px;
+        font-size: 15px;
+    }
+    .ContFSubmt{
+        height: 44px;
+    }
+    .ContAll h2{
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 1200px) and (min-width: 550px){
+    .Intro_Left,
+    .Intro_Right{
+        height: auto;
+    }
+    .Intro_Left .picture{
+        position: inherit;
+        width: 100%;
+        height: 70%;
+    }
+    .navbar-container{
+        background-color: #f3f3f3;
+        height: 45px;
+        align-items: center;
+        top: 0;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .nav-links li{
+        font-size: 15px;
+    }
+
+    
+    /* Engineering And Design */
+    .Design_And_Engineering{
+        display: block;
+    }
+    .design{
+        flex-direction: row-reverse;
+    }
+    .engineering{
+        margin-left: 10px;
+    }
+
+    /* About */
+    .About_Title h1{
+        font-size: 35px;
+    }
+    .Full_Cert{
+        font-size: 8px;
+    }
+}
