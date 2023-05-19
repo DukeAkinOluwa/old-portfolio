@@ -330,9 +330,10 @@ footer h2{
 .AboutTxt p{
     padding: 10px 5vw;
 }
-/* .Cert_Div{
+.Cert_Div{
     width: 100%;
     display: block;
+    margin-top: 30px;
 }
 .Cert_Div_Row{
     display: flex;
@@ -364,6 +365,9 @@ footer h2{
     background-color: #0C0C1E;
     border-radius: 20px 20px 0px 0px;
 }
+.Details{
+    min-width: 70%;
+}
 .Details p{
     margin: 0px;
 }
@@ -379,7 +383,7 @@ footer h2{
 .Cert_Link{
     height: 32%;
     width: 90%;
-} */
+}
 
 
 /* Projects */
@@ -789,8 +793,23 @@ form .ContF{
     .About_Title h1{
         font-size: 35px;
     }
+    .Cert_Div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .Cert_Div_Row{
+        width: 95%;
+        gap: 3%;
+    }
     .Full_Cert{
         font-size: 8px;
+        width: 100%;
+    }
+    .Detail{
+        height: 16vh;
+        bottom: 18vh;
     }
 }
 
@@ -845,5 +864,25 @@ form .ContF{
     .ContAll{
         width: 90%;
     }
-}
 
+    /* About */
+    .Cert_Div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .Cert_Div_Row{
+        width: 95%;
+        flex-direction: column;
+    }
+    .Full_Cert{
+        width: 100%;
+        min-height: 300px;
+        max-height: 500px;
+    }
+    .Detail{
+        min-height: 90px;
+        bottom: 90px;
+    }
+}
