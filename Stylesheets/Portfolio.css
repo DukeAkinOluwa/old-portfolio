@@ -450,6 +450,9 @@ footer h2{
 .ProdLnkImg2{
     background-image: url('https://dukeakinoluwa.github.io/Magazine/ALL/Images/Icon.png');
 }
+.ProdLnkImg3{
+    background-image: url('https://dukeakinoluwa.github.io/Library/images/PantheraLogo.jpg');
+}
 .ProdLnkDescrip{
     display: flex;
     flex-direction: column;
